@@ -7,16 +7,16 @@ import { VideoCard } from "./VideoCard"
 export const Library = () => {
 
     return (
-        <div className='max-w-[1150px] py-24 mx-5 lg:mx-20 xl:mx-auto'>
-            <div className='flex flex-wrap justify-between'>
-                <div className='flex  flex-wrap gap-3'>
+        <div className='flex flex-col max-w-[1150px] py-14 lg:py-24 mx-auto px-8'>
+            <div className='flex flex-wrap justify-center lg:justify-between'>
+                <div className='flex justify-center flex-wrap gap-3'>
                     <Button content="Agências" />
                     <Button content="Chatbot" />
                     <Button content="Marketing Digital" />
                     <Button content="Geração de Leads" />
                     <Button content="Mídia Paga" />
                 </div>
-                <div className="mt-5 lg:mt-2 xl:mt-0">
+                <div className="mt-6 lg:mt-2 xl:mt-0">
                     <Dropdown />
                 </div>
             </div>

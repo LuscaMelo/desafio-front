@@ -8,7 +8,7 @@ export const Dropdown = () => {
     return (
         <div className='flex gap-2 items-center'>
             <span className='font-extrabold mr-1'>Ordernar por</span>
-            <button className='relative flex items-center gap-1 py-2 px-4 rounded-lg border border-gray-800 font-semibold text-gray-600' onClick={() => setOpen(!open)}>
+            <button className='relative flex items-center gap-1 py-2 px-4 rounded-lg border border-gray-800 font-semibold text-sm md:text-md text-gray-600' onClick={() => setOpen(!open)}>
                 Data de Publicação
                 {
                     open ? <AiFillCaretUp className='text-lg' /> : <AiFillCaretDown className='text-lg' />
