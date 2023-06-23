@@ -1,10 +1,11 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
+
+// Font
+const jakarta = localFont({ src: './fonts/PlusJakartaSans-VariableFont_wght.ttf' })
 
 //Components
 import { Navbar } from '@/components/Navbar'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Leadster',
@@ -18,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={jakarta.className}>
         <Navbar />
         {children}
       </body>
