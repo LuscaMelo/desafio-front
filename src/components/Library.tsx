@@ -1,6 +1,7 @@
 "use client"
 
 import { Filters } from "./Filters"
+import { Pagination } from "./Pagination"
 import { VideoCard } from "./VideoCard"
 
 export const Library = () => {
@@ -19,6 +20,9 @@ export const Library = () => {
                     <VideoCard />
                     <VideoCard />
                 </div>
+            </div>
+            <div className="flex justify-center mt-10">
+                <Pagination />
             </div>
         </div>
     )
