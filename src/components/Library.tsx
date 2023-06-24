@@ -7,9 +7,9 @@ import { VideoCard } from "./VideoCard"
 export const Library = () => {
 
     return (
-        <div className='flex flex-col max-w-[1150px] py-14 lg:py-24 mx-auto px-8'>
+        <div className='flex flex-col max-w-[1150px] py-14 lg:py-24 mx-auto px-4'>
             <div className='flex flex-wrap justify-center lg:justify-between'>
-                <div className='flex justify-center flex-wrap gap-3'>
+                <div className='flex justify-center flex-wrap gap-2'>
                     <Button content="Agências" />
                     <Button content="Chatbot" />
                     <Button content="Marketing Digital" />
@@ -21,7 +21,7 @@ export const Library = () => {
                 </div>
             </div>
 
-            <div className="flex justify-center">
+            <div className="flex justify-center px-4">
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 border-b-2 border-t-2 border-gray-300 pt-16 pb-20">
                     <VideoCard />
                     <VideoCard />
