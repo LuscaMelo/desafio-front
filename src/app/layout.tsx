@@ -5,7 +5,7 @@ import localFont from 'next/font/local'
 const jakarta = localFont({ src: './fonts/PlusJakartaSans-VariableFont_wght.ttf' })
 
 //Components
-import { Navbar } from '@/components/Navbar'
+import { Header } from '@/components/Header'
 
 export const metadata = {
   title: 'Leadster',
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={jakarta.className}>
-        <Navbar />
+        <Header />
         {children}
       </body>
     </html>
