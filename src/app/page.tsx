@@ -1,3 +1,4 @@
+import { Convert } from "@/components/Convert";
 import { Hero } from "@/components/Hero";
 import { Library } from "@/components/Library";
 
@@ -9,6 +10,9 @@ export default function Home() {
       </section>
       <section className="h-full">
         <Library />
+      </section>
+      <section className="h-full">
+        <Convert />
       </section>
     </main>
   )
