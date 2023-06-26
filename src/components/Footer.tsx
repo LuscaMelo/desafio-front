@@ -13,7 +13,7 @@ export const Footer = () => {
                     </div>
                     <span className='text-light text-sm'>Transformando visitantes em clientes.</span>
                 </div>
-                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 gap-y-16 w-full'>
+                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 gap-y-16 w-full'>
                     <div className='flex flex-col gap-10'>
                         <h5 className='text-lg font-bold'>Links Principais</h5>
                         <ul className='flex flex-col gap-5'>
