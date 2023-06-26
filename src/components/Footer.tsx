@@ -13,20 +13,20 @@ export const Footer = () => {
                     </div>
                     <span className='text-light text-sm'>Transformando visitantes em clientes.</span>
                 </div>
-                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 gap-y-16 w-full'>
+                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-16 w-full'>
                     <div className='flex flex-col gap-10'>
                         <h5 className='text-lg font-bold'>Links Principais</h5>
                         <ul className='flex flex-col gap-5'>
-                            <li className='text-light font-light'>
+                            <li className='text-light font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Home</Link>
                             </li>
-                            <li className='text-light font-light'>
+                            <li className='text-light font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Ferramenta</Link>
                             </li>
-                            <li className='text-light font-light'>
+                            <li className='text-light font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Preços</Link>
                             </li>
-                            <li className='text-light font-light'>
+                            <li className='text-light font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Contato</Link>
                             </li>
                         </ul>
@@ -34,16 +34,16 @@ export const Footer = () => {
                     <div className='flex flex-col gap-10'>
                         <h5 className='text-lg font-bold'>Cases</h5>
                         <ul className='flex flex-col gap-5'>
-                            <li className='text-light font-light'>
+                            <li className='text-light font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Geração de B2B</Link>
                             </li>
-                            <li className='text-light font-light'>
+                            <li className='text-light font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Geração de Leads em Software</Link>
                             </li>
-                            <li className='text-light font-light'>
+                            <li className='text-light font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Geração de Leads em Imobiliária</Link>
                             </li>
-                            <li className='text-light font-light'>
+                            <li className='text-light font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Cases de Sucesso</Link>
                             </li>
                         </ul>
@@ -51,16 +51,16 @@ export const Footer = () => {
                     <div className='flex flex-col gap-10'>
                         <h5 className='text-lg font-bold'>Materiais</h5>
                         <ul className='flex flex-col gap-5'>
-                            <li className='text-light font-light'>
+                            <li className='text-light font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Blog</Link>
                             </li>
-                            <li className='text-light font-light'>
+                            <li className='text-light font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Parceria com Agências</Link>
                             </li>
-                            <li className='text-light font-light'>
+                            <li className='text-light font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Guia Definitivo do Marketing</Link>
                             </li>
-                            <li className='text-light font-light'>
+                            <li className='text-light font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Materiais Gratuitos</Link>
                             </li>
                         </ul>
@@ -68,14 +68,27 @@ export const Footer = () => {
                     <div className='flex flex-col gap-6'>
                         <h5 className='text-lg font-bold'>Siga a Leadster</h5>
                         <div className='flex items-center gap-3'>
-                            <div className='flex items-center justify-center w-[45px] h-[45px] bg-gray-100 rounded-full'>
-                                <FaLinkedinIn className='text-light' />
+                            <div className='flex items-center justify-center w-[45px] h-[45px] text-light hover:text-white bg-gray-100 hover:bg-[#00aff0] duration-500 rounded-full cursor-pointer'>
+                                <a
+                                    href="https://www.linkedin.com/company/leadster-platform/?utm_source=branding&utm_medium=cpc&utm_campaign=bofu_pql_CA_search_branding_leadster&utm_term={leadster}&utm_content=CJ_leadster&utm_source=branding&utm_medium=cpc&utm_campaign=Branding_leadster&gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJtsK8Un0hkLo-naG3wBKgtq9KDH2C64QjcIwv1LzZK1cZqB46-d3DUaAkQPEALw_wcB?utm_source=branding&utm_medium=cpc&utm_campaign=bofu_pql_CA_search_branding_leadster&utm_term={leadster}&utm_content=CJ_leadster&utm_source=branding&utm_medium=cpc&utm_campaign=Branding_leadster&gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJtsK8Un0hkLo-naG3wBKgtq9KDH2C64QjcIwv1LzZK1cZqB46-d3DUaAkQPEALw_wcB"
+                                    target="_blank"
+                                >
+                                    <FaLinkedinIn />
+                                </a>
                             </div>
-                            <div className='flex items-center justify-center w-[45px] h-[45px] bg-gray-100 rounded-full'>
-                                <FaFacebookF className='text-light' />
+                            <div className='flex items-center justify-center w-[45px] h-[45px] text-light hover:text-white bg-gray-100 hover:bg-[#00aff0] duration-500 rounded-full cursor-pointer'>
+                                <a
+                                    href="https://www.facebook.com/leadsterplatform?utm_source=branding&utm_medium=cpc&utm_campaign=Branding_leadster&utm_term=%7Bleadster%7D&utm_content=CJ_leadster&gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJs9UBbxJ75Dt8MZNupRdKGuiyoA8iVvUWn1ylvA5nK02sT-AbqZU_UaAnm1EALw_wcB"
+                                    target="_blank"
+                                >
+                                    <FaFacebookF />
+                                </a>
                             </div>
-                            <div className='flex items-center justify-center w-[45px] h-[45px] bg-gray-100 rounded-full'>
-                                <FaInstagram className='text-light' />
+                            <div className='flex items-center justify-center w-[45px] h-[45px] text-light hover:text-white bg-gray-100 hover:bg-[#00aff0] duration-500 rounded-full cursor-pointer'>
+                                <a href="https://www.instagram.com/leadster.com.br/?utm_source=branding&utm_medium=cpc&utm_campaign=Branding_leadster&utm_term=%7Bleadster%7D&utm_content=CJ_leadster&gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJs9UBbxJ75Dt8MZNupRdKGuiyoA8iVvUWn1ylvA5nK02sT-AbqZU_UaAnm1EALw_wcB"
+                                    target='_blank'>
+                                    <FaInstagram />
+                                </a>
                             </div>
                         </div>
                         <div className='hidden lg:block'>

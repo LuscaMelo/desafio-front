@@ -6,11 +6,11 @@ export const Pagination = () => {
             <div>
                 <p className='font-bold'>Página</p>
             </div>
-            <div className='flex font-medium'>
-                <button className=' justify-center items-center w-[40px] h-[40px] rounded-lg'>1</button>
-                <button className=' justify-center items-center w-[40px] h-[40px] rounded-lg'>2</button>
-                <button className=' justify-center items-center w-[40px] h-[40px] rounded-lg text-primary font-bold border border-primary'>3</button>
-                <button className=' justify-center items-center w-[40px] h-[40px] rounded-lg'>4</button>
+            <div className='flex font-medium gap-1'>
+                <button className='justify-center items-center w-[40px] h-[40px] rounded-lg hover:bg-gray-100 duration-300'>1</button>
+                <button className='justify-center items-center w-[40px] h-[40px] rounded-lg hover:bg-gray-100 duration-300'>2</button>
+                <button className='justify-center items-center w-[40px] h-[40px] rounded-lg text-primary font-bold border border-primary'>3</button>
+                <button className='justify-center items-center w-[40px] h-[40px] rounded-lg hover:bg-gray-100 duration-300'>4</button>
             </div>
         </div>
     )

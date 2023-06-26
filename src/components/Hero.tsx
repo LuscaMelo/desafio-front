@@ -6,7 +6,7 @@ export const Hero = () => {
     return (
         <div className='bg-secondary h-[62vh] flex justify-center items-center'>
             <div className='text-center'>
-                <span className='uppercase text-primary text-[11px] md:text-[14px] font-extrabold border-2 border-primary py-1.5 px-4 rounded-full rounded-es-none'>Webnars exclusivos</span>
+                <span className='uppercase text-primary text-[11px] md:text-[14px] font-extrabold border-2 border-primary py-1.5 px-4 rounded-full rounded-es-none'>Webinars exclusivos</span>
                 <div className='flex flex-col items-center'>
                     <h2 className='capitalize font-medium text-xl md:text-3xl lg:text-5xl mt-6'>Menos conversinha,</h2>
                     <h1 className='relative capitalize font-bold linear-gradient text-4xl md:text-5xl lg:text-7xl xl:text-8xl pb-6'>
