@@ -6,6 +6,7 @@ const jakarta = localFont({ src: './fonts/PlusJakartaSans-VariableFont_wght.ttf'
 
 //Components
 import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 export const metadata = {
   title: 'Leadster',
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={jakarta.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
