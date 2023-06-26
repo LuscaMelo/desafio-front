@@ -4,7 +4,7 @@ import heroImg from "/public/images/asset-header.png";
 
 export const Hero = () => {
     return (
-        <div className='bg-secondary h-[62vh] flex justify-center items-center'>
+        <div className='bg-secondary h-[58vh] flex justify-center items-center'>
             <div className='text-center'>
                 <span className='uppercase text-primary text-[11px] md:text-[14px] font-extrabold border-2 border-primary py-1.5 px-4 rounded-full rounded-es-none'>Webinars exclusivos</span>
                 <div className='flex flex-col items-center'>

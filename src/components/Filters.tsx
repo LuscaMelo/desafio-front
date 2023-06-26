@@ -4,7 +4,7 @@ import { Dropdown } from './Dropdown'
 
 export const Filters = () => {
     return (
-        <div className='flex flex-wrap justify-center lg:justify-between mb-6 lg:mb-0'>
+        <div className='flex flex-wrap justify-center items-center lg:justify-between mb-6 lg:mb-0'>
             <div className='flex justify-center flex-wrap gap-2'>
                 <Button content="Agências" />
                 <Button content="Chatbot" />
