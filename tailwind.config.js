@@ -15,7 +15,8 @@ module.exports = {
       colors: {
         'primary': '#007DFF',
         'secondary': '#EDF6FF',
-        'light': '#8192B1'
+        'light': '#8192B1',
+        'overlay': '#08465C'
       },
     },
   },

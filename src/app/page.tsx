@@ -4,7 +4,7 @@ import { Library } from "@/components/Library";
 
 export default function Home() {
   return (
-    <main className='w-[100%]'>
+    <main className='w-[100%] relative'>
       <section className="h-full">
         <Hero />
       </section>
