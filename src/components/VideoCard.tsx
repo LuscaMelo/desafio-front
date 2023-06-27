@@ -7,9 +7,10 @@ import { BsCloudDownload } from 'react-icons/bs'
 
 interface iVideo {
     title: string
+    url: string
 }
 
-export const VideoCard = ({ title }: iVideo) => {
+export const VideoCard = ({ title, url }: iVideo) => {
 
     const [show, setShow] = useState(false)
     const [open, setOpen] = useState('hidden')
@@ -43,7 +44,7 @@ export const VideoCard = ({ title }: iVideo) => {
                         <h3 className='text-xl md:text-xl leading-7 font-semibold text-gray-900 mt-8 md:mt-8 lg:mt-10 max-w-[370px] mr-5 md:mr-0'><span className='text-primary'>Webinar:</span> {title}</h3>
                     </div>
                     <div className='h-[100%] w-full mt-8'>
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-cqQTHkOnX4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                        <iframe width="100%" height="100%" src={url} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
                     </div>
                     <div className='p-7'>
                         <div>

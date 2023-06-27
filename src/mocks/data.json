@@ -1,56 +1,47 @@
 [
     {
         "id": 1,
-        "title": "Como aumentar sua Gestão de Leads feat. Traktor 1",
-        "category": "Agencias",
-        "video": "https://www.youtube.com/embed/kvZxxVLApxw"
+        "title": "Tour pela Plataforma da Leadster",
+        "url": "https://www.youtube.com/embed/-cqQTHkOnX4"
     },
     {
         "id": 2,
-        "title": "Como aumentar sua Gestão de Leads feat. Traktor 2",
-        "category": "Agencias",
-        "url": "https://www.youtube.com/embed/kvZxxVLApxw"
+        "title": "Como usar o ChatGPT para gerar mais Leads Qualificados",
+        "url": "https://www.youtube.com/embed/a89Htfx0YKo"
     },
     {
         "id": 3,
-        "title": "Como aumentar sua Gestão de Leads feat. Traktor 3",
-        "category": "Agencias",
-        "url": "https://www.youtube.com/embed/kvZxxVLApxw"
+        "title": "Conheça as principais plataformas de Marketing Conversacional",
+        "url": "https://www.youtube.com/embed/yju8RTdhHQ0"
     },
     {
         "id": 4,
-        "title": "Como aumentar sua Gestão de Leads feat. Traktor 4",
-        "category": "Agencias",
+        "title": "Leadster - Triplique sua Geração de Leads com o Marketing Conversacional",
         "url": "https://www.youtube.com/embed/kvZxxVLApxw"
     },
     {
         "id": 5,
-        "title": "Como aumentar sua Gestão de Leads feat. Traktor 5",
-        "category": "Agencias",
-        "url": "https://www.youtube.com/embed/kvZxxVLApxw"
+        "title": "Leadster - Aumente sua Geração de Leads",
+        "url": "https://www.youtube.com/embed/WTabj8UO-yc"
     },
     {
         "id": 6,
-        "title": "Como aumentar sua Gestão de Leads feat. Traktor 6",
-        "category": "agencias",
-        "url": "https://www.youtube.com/embed/kvZxxVLApxw"
+        "title": "Como funciona o teste grátis da Leadster",
+        "url": "https://www.youtube.com/embed/45fD1JW_nT8"
     },
     {
         "id": 7,
-        "title": "Como aumentar sua Gestão de Leads feat. Traktor 7",
-        "category": "agencias",
-        "url": "https://www.youtube.com/embed/kvZxxVLApxw"
+        "title": "Como integrar a Leadster ao Bitrix24",
+        "url": "https://www.youtube.com/embed/OJF_Giu4VmA"
     },
     {
         "id": 8,
-        "title": "Como aumentar sua Gestão de Leads feat. Traktor 8",
-        "category": "agencias",
-        "url": "https://www.youtube.com/embed/kvZxxVLApxw"
+        "title": "Como Integrar a Leadster com o Zapier",
+        "url": "https://www.youtube.com/embed/HoZuMuY7To4"
     },
     {
         "id": 9,
-        "title": "Como aumentar sua Gestão de Leads feat. Traktor 9",
-        "category": "agencias",
-        "url": "https://www.youtube.com/embed/kvZxxVLApxw"
+        "title": "Como realizo uma integração com outra plataforma?",
+        "url": "https://www.youtube.com/embed/y_UtXEQvtxA"
     }
 ]

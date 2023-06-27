@@ -16,7 +16,7 @@ export const Library = () => {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 border-b-2 border-t-2 border-gray-300 pt-16 pb-20">
                     {
                         data.map((video, index) => (
-                            <VideoCard key={index} title={video.title} />
+                            <VideoCard key={index} title={video.title} url={video.url} />
                         ))
                     }
                 </div>
