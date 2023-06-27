@@ -3,6 +3,7 @@
 import { Filters } from "./Filters"
 import { Pagination } from "./Pagination"
 import { VideoCard } from "./VideoCard"
+import data from '../mocks/data.json'
 
 export const Library = () => {
 
@@ -13,12 +14,11 @@ export const Library = () => {
             </div>
             <div className="flex justify-center px-6 lg:px-0">
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 border-b-2 border-t-2 border-gray-300 pt-16 pb-20">
-                    <VideoCard />
-                    <VideoCard />
-                    <VideoCard />
-                    <VideoCard />
-                    <VideoCard />
-                    <VideoCard />
+                    {
+                        data.map((video, index) => (
+                            <VideoCard key={index} title={video.title} />
+                        ))
+                    }
                 </div>
             </div>
             <div className="flex justify-center mt-10">
