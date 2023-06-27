@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 import { AiFillCaretDown, AiFillCaretUp } from 'react-icons/ai'
 
@@ -14,13 +15,33 @@ export const Dropdown = () => {
                     open ? <AiFillCaretUp className='text-lg' /> : <AiFillCaretDown className='text-lg' />
                 }
                 {
-                    open ? <div className='absolute bottom-[-157px] right-[50%] lg:right-0 translate-x-[50%] lg:translate-x-0 rounded-xl w-[167%] bg-black z-50'>
-                        <ul className='flex flex-col items-start p-5 pl-5 gap-y-6'>
-                            <li className='text-white'>Data de Publicação</li>
-                            <li className='text-white'>Relevância</li>
-                            <li className='text-white'>Duração</li>
+                    open ? <motion.div
+                        className='absolute bottom-[-157px] right-[50%] lg:right-0 translate-x-[50%] lg:translate-x-0 rounded-xl w-[167%] bg-black z-50'
+                        initial={{ opacity: 0, y: -50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{
+                            type: 'spring',
+                            damping: 10
+                        }}
+                    >
+                        <ul className='flex flex-col items-start p-5 pl-6 gap-y-6'>
+                            <motion.li
+                                className='text-white'
+                                whileHover={{ scale: 1.05 }}
+                            >Data de Publicação
+                            </motion.li>
+                            <motion.li
+                                className='text-white'
+                                whileHover={{ scale: 1.05 }}
+                            >Relevância
+                            </motion.li>
+                            <motion.li
+                                className='text-white'
+                                whileHover={{ scale: 1.05 }}
+                            >Duração
+                            </motion.li>
                         </ul>
-                    </div> : null
+                    </motion.div> : null
                 }
             </button>
         </div>
