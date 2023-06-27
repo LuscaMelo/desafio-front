@@ -13,60 +13,60 @@ export const Footer = () => {
                     </div>
                     <span className='text-light text-sm'>Transformando visitantes em clientes.</span>
                 </div>
-                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-16 w-full'>
+                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 gap-y-16 w-full'>
                     <div className='flex flex-col gap-10'>
-                        <h5 className='text-lg font-bold'>Links Principais</h5>
-                        <ul className='flex flex-col gap-5'>
-                            <li className='text-light font-light hover:text-primary hover:font-normal'>
+                        <h5 className='text-md lg:text-lg font-bold'>Links Principais</h5>
+                        <ul className='flex flex-col gap-3 lg:gap-5'>
+                            <li className='text-light font-sm lg:font-md font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Home</Link>
                             </li>
-                            <li className='text-light font-light hover:text-primary hover:font-normal'>
+                            <li className='text-light font-sm lg:font-md font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Ferramenta</Link>
                             </li>
-                            <li className='text-light font-light hover:text-primary hover:font-normal'>
+                            <li className='text-light font-sm lg:font-md font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Preços</Link>
                             </li>
-                            <li className='text-light font-light hover:text-primary hover:font-normal'>
+                            <li className='text-light font-sm lg:font-md font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Contato</Link>
                             </li>
                         </ul>
                     </div>
                     <div className='flex flex-col gap-10'>
-                        <h5 className='text-lg font-bold'>Cases</h5>
-                        <ul className='flex flex-col gap-5'>
-                            <li className='text-light font-light hover:text-primary hover:font-normal'>
+                        <h5 className='text-md lg:text-lg font-bold'>Cases</h5>
+                        <ul className='flex flex-col gap-3 lg:gap-5'>
+                            <li className='text-light font-sm lg:font-md font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Geração de B2B</Link>
                             </li>
-                            <li className='text-light font-light hover:text-primary hover:font-normal'>
+                            <li className='text-light font-sm lg:font-md font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Geração de Leads em Software</Link>
                             </li>
-                            <li className='text-light font-light hover:text-primary hover:font-normal'>
+                            <li className='text-light font-sm lg:font-md font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Geração de Leads em Imobiliária</Link>
                             </li>
-                            <li className='text-light font-light hover:text-primary hover:font-normal'>
+                            <li className='text-light font-sm lg:font-md font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Cases de Sucesso</Link>
                             </li>
                         </ul>
                     </div>
                     <div className='flex flex-col gap-10'>
-                        <h5 className='text-lg font-bold'>Materiais</h5>
-                        <ul className='flex flex-col gap-5'>
-                            <li className='text-light font-light hover:text-primary hover:font-normal'>
+                        <h5 className='text-md lg:text-lg font-bold'>Materiais</h5>
+                        <ul className='flex flex-col gap-3 lg:gap-5'>
+                            <li className='text-light font-sm lg:font-md font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Blog</Link>
                             </li>
-                            <li className='text-light font-light hover:text-primary hover:font-normal'>
+                            <li className='text-light font-sm lg:font-md font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Parceria com Agências</Link>
                             </li>
-                            <li className='text-light font-light hover:text-primary hover:font-normal'>
+                            <li className='text-light font-sm lg:font-md font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Guia Definitivo do Marketing</Link>
                             </li>
-                            <li className='text-light font-light hover:text-primary hover:font-normal'>
+                            <li className='text-light font-sm lg:font-md font-light hover:text-primary hover:font-normal'>
                                 <Link href='/'>Materiais Gratuitos</Link>
                             </li>
                         </ul>
                     </div>
                     <div className='flex flex-col gap-6'>
-                        <h5 className='text-lg font-bold'>Siga a Leadster</h5>
+                        <h5 className='text-md lg:text-lg font-bold'>Siga a Leadster</h5>
                         <div className='flex items-center gap-3'>
                             <div className='flex items-center justify-center w-[45px] h-[45px] text-light hover:text-white bg-gray-100 hover:bg-[#00aff0] duration-500 rounded-full cursor-pointer'>
                                 <a
@@ -92,13 +92,13 @@ export const Footer = () => {
                             </div>
                         </div>
                         <div className='hidden lg:block'>
-                            <p className='text-black'>E-mail: <span className='text-light ml-1'>contato@leadster.com.br</span></p>
-                            <p className='flex flex-col md:flex-row text-black mt-2'>Telefone: <span className='text-light ml-1'>(42) 98828-9851</span></p>
+                            <p className='text-black text-sm lg:text-md'>E-mail: <span className='text-light ml-1'>contato@leadster.com.br</span></p>
+                            <p className='flex flex-col md:flex-row text-black text-sm lg:text-md mt-2'>Telefone: <span className='text-light ml-1'>(42) 98828-9851</span></p>
                         </div>
                     </div>
                     <div className='lg:hidden'>
-                        <p className='text-black'>E-mail: <span className='text-light ml-1'>contato@leadster.com.br</span></p>
-                        <p className='flex flex-col md:flex-row text-black mt-2'>Telefone: <span className='text-light ml-1'>(42) 98828-9851</span></p>
+                        <p className='text-black text-sm lg:text-md'>E-mail: <span className='text-light ml-1'>contato@leadster.com.br</span></p>
+                        <p className='flex flex-col md:flex-row text-black text-sm lg:text-md mt-2'>Telefone: <span className='text-light ml-1'>(42) 98828-9851</span></p>
                     </div>
                 </div>
             </div>
