@@ -14,8 +14,8 @@ export const Dropdown = () => {
                     open ? <AiFillCaretUp className='text-lg' /> : <AiFillCaretDown className='text-lg' />
                 }
                 {
-                    open ? <div className='absolute bottom-[-123px] right-[50%] lg:right-0 translate-x-[50%] lg:translate-x-0 rounded-xl w-[170%] bg-black z-50'>
-                        <ul className='flex flex-col items-start p-3 pl-5 gap-4'>
+                    open ? <div className='absolute bottom-[-157px] right-[50%] lg:right-0 translate-x-[50%] lg:translate-x-0 rounded-xl w-[167%] bg-black z-50'>
+                        <ul className='flex flex-col items-start p-5 pl-5 gap-y-6'>
                             <li className='text-white'>Data de Publicação</li>
                             <li className='text-white'>Relevância</li>
                             <li className='text-white'>Duração</li>
