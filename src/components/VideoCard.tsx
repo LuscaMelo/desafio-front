@@ -34,12 +34,13 @@ export const VideoCard = ({ title }: iVideo) => {
                 </div>
             </div>
 
+            {/* Modal */}
             <div className={`${open} fixed top-0 left-0 flex justify-center items-center w-[100%] h-screen bg-overlay opacity-60 saturate-50 overflow-hidden z-50`}></div>
-            <div className={`${open} fixed top-0 left-0 flex justify-center items-center w-[100%] h-screen overflow-hidden z-50`}>
-                <div className='relative w-[600px] bg-white flex flex-col rounded-2xl lg:overflow-hidden mx-6 h-[85%] overflow-auto'>
+            <div className={`${open} fixed top-0 left-0 flex justify-center md:items-center mt-[6.5%] md:mt-0 w-[100%] h-screen overflow-hidden z-50 mb-20`}>
+                <div className='relative w-[600px] bg-white flex flex-col rounded-2xl lg:overflow-hidden mx-6 h-[85%] overflow-auto border-t-[5px] border-primary'>
                     <IoMdClose className='absolute top-3 right-3 text-2xl cursor-pointer' onClick={() => { setOpen('hidden') }} />
-                    <div className='text-center flex justify-center items-center h-[18%] border-t-[5px] border-primary'>
-                        <h3 className='text-xl md:text-2xl leading-7 font-semibold text-gray-900 mt-8 md:mt-8 lg:mt-10 max-w-[370px] mr-5 md:mr-0'><span className='text-primary'>Webinar:</span> {title}</h3>
+                    <div className='text-center flex justify-center items-center h-[18%]'>
+                        <h3 className='text-xl md:text-xl leading-7 font-semibold text-gray-900 mt-8 md:mt-8 lg:mt-10 max-w-[370px] mr-5 md:mr-0'><span className='text-primary'>Webinar:</span> {title}</h3>
                     </div>
                     <div className='h-[100%] w-full mt-8'>
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-cqQTHkOnX4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
@@ -74,7 +75,6 @@ export const VideoCard = ({ title }: iVideo) => {
                         </div>
                     </div>
                 </div>
-
             </div>
 
         </>
