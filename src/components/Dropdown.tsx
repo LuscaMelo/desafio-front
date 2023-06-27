@@ -16,7 +16,7 @@ export const Dropdown = () => {
                 }
                 {
                     open ? <motion.div
-                        className='absolute bottom-[-157px] right-[50%] lg:right-0 translate-x-[50%] lg:translate-x-0 rounded-xl w-[167%] bg-black z-50'
+                        className='absolute bottom-[-157px] left-[-35%] lg:left-[-65%] lg:translate-x-0 rounded-xl w-[167%] bg-black z-50'
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{
