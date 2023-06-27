@@ -1,7 +1,10 @@
+"use client"
+
 import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../../public/images/leadster.gif'
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa'
+import { motion } from 'framer-motion'
 
 export const Footer = () => {
     return (
@@ -68,28 +71,36 @@ export const Footer = () => {
                     <div className='flex flex-col gap-6'>
                         <h5 className='text-md lg:text-lg font-bold'>Siga a Leadster</h5>
                         <div className='flex items-center gap-3'>
-                            <div className='flex items-center justify-center w-[45px] h-[45px] text-light hover:text-white bg-gray-100 hover:bg-[#00aff0] duration-500 rounded-full cursor-pointer'>
+                            <motion.div
+                                className='flex items-center justify-center w-[45px] h-[45px] text-light hover:text-white bg-gray-100 hover:bg-[#00aff0] duration-500 rounded-full cursor-pointer'
+                                whileHover={{ scale: 1.15 }}>
                                 <a
                                     href="https://www.linkedin.com/company/leadster-platform/?utm_source=branding&utm_medium=cpc&utm_campaign=bofu_pql_CA_search_branding_leadster&utm_term={leadster}&utm_content=CJ_leadster&utm_source=branding&utm_medium=cpc&utm_campaign=Branding_leadster&gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJtsK8Un0hkLo-naG3wBKgtq9KDH2C64QjcIwv1LzZK1cZqB46-d3DUaAkQPEALw_wcB?utm_source=branding&utm_medium=cpc&utm_campaign=bofu_pql_CA_search_branding_leadster&utm_term={leadster}&utm_content=CJ_leadster&utm_source=branding&utm_medium=cpc&utm_campaign=Branding_leadster&gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJtsK8Un0hkLo-naG3wBKgtq9KDH2C64QjcIwv1LzZK1cZqB46-d3DUaAkQPEALw_wcB"
                                     target="_blank"
                                 >
                                     <FaLinkedinIn />
                                 </a>
-                            </div>
-                            <div className='flex items-center justify-center w-[45px] h-[45px] text-light hover:text-white bg-gray-100 hover:bg-[#00aff0] duration-500 rounded-full cursor-pointer'>
+                            </motion.div>
+                            <motion.div
+                                className='flex items-center justify-center w-[45px] h-[45px] text-light hover:text-white bg-gray-100 hover:bg-[#00aff0] duration-500 rounded-full cursor-pointer'
+                                whileHover={{ scale: 1.15 }}
+                            >
                                 <a
                                     href="https://www.facebook.com/leadsterplatform?utm_source=branding&utm_medium=cpc&utm_campaign=Branding_leadster&utm_term=%7Bleadster%7D&utm_content=CJ_leadster&gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJs9UBbxJ75Dt8MZNupRdKGuiyoA8iVvUWn1ylvA5nK02sT-AbqZU_UaAnm1EALw_wcB"
                                     target="_blank"
                                 >
                                     <FaFacebookF />
                                 </a>
-                            </div>
-                            <div className='flex items-center justify-center w-[45px] h-[45px] text-light hover:text-white bg-gray-100 hover:bg-[#00aff0] duration-500 rounded-full cursor-pointer'>
+                            </motion.div>
+                            <motion.div
+                                className='flex items-center justify-center w-[45px] h-[45px] text-light hover:text-white bg-gray-100 hover:bg-[#00aff0] duration-500 rounded-full cursor-pointer'
+                                whileHover={{ scale: 1.15 }}
+                            >
                                 <a href="https://www.instagram.com/leadster.com.br/?utm_source=branding&utm_medium=cpc&utm_campaign=Branding_leadster&utm_term=%7Bleadster%7D&utm_content=CJ_leadster&gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJs9UBbxJ75Dt8MZNupRdKGuiyoA8iVvUWn1ylvA5nK02sT-AbqZU_UaAnm1EALw_wcB"
                                     target='_blank'>
                                     <FaInstagram />
                                 </a>
-                            </div>
+                            </motion.div>
                         </div>
                         <div className='hidden lg:block'>
                             <p className='text-black text-sm lg:text-md'>E-mail: <span className='text-light ml-1'>contato@leadster.com.br</span></p>
