@@ -7,9 +7,31 @@ import { motion } from "framer-motion"
 
 export const Hero = () => {
 
+    //Animations
     const title = {
-        hidden: { scale: 0 },
-        show: { scale: 1 }
+        hidden: { scale: 0, opacity: 0 },
+        show: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+                type: 'spring',
+                damping: 3.5,
+                mass: 0.2,
+                stiffness: 200
+            }
+        }
+    }
+
+    const image = {
+        initial: { opacity: 0 },
+        show: {
+            opacity: 1,
+            transition: {
+                type: 'spring',
+                duration: 1.7,
+                delay: 1.5
+            }
+        }
     }
 
     return (
@@ -23,14 +45,19 @@ export const Hero = () => {
                         variants={title}
                         initial='hidden'
                         animate='show'
-                        transition={{ type: 'spring', damping: 3.5, mass: 0.2, stiffness: 150 }}
                     >
                         Mais conversão
-                        <Image
-                            src={heroImg}
-                            alt="detail"
-                            className="absolute top-0 right-[-10px] lg:right-[-15px] w-6 md:w-7 lg:w-10 xl:top-2 2xl:w-[48px]"
-                        />
+                        <motion.div
+                            variants={image}
+                            initial='initial'
+                            animate='show'
+                        >
+                            <Image
+                                src={heroImg}
+                                alt="detail"
+                                className="absolute top-0 right-[-10px] lg:right-[-15px] w-6 md:w-7 lg:w-10 xl:top-2 2xl:w-[48px]"
+                            />
+                        </motion.div>
                     </motion.h1>
                     <hr className='bg-gray-300 h-[2px] w-[50vw] mx-auto' />
 

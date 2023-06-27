@@ -1,9 +1,10 @@
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import thumbnail from '../../public/images/thumbnail.png'
 import { HiMiniPlay } from 'react-icons/hi2'
 import { IoMdClose } from 'react-icons/io'
 import { BsCloudDownload } from 'react-icons/bs'
+import { motion, useAnimation, useInView } from 'framer-motion'
 
 interface iVideo {
     title: string
@@ -12,14 +13,37 @@ interface iVideo {
 
 export const VideoCard = ({ title, url }: iVideo) => {
 
+    const ref = useRef(null)
+    const isInView = useInView(ref, { once: true })
+
+    const mainControls = useAnimation()
+
+    useEffect(() => {
+        if (isInView) {
+            mainControls.start("show")
+        }
+    }, [isInView, mainControls])
+
     const [show, setShow] = useState(false)
     const [open, setOpen] = useState('hidden')
 
+
     return (
         <>
-            <div className="flex flex-col max-w-[362px] bg-white shadow-2xl shadow-gray-300 rounded-3xl overflow-hidden cursor-pointer hover:text-primary"
+            <motion.div
+                ref={ref}
+                className="flex flex-col max-w-[362px] bg-white shadow-2xl shadow-gray-300 rounded-3xl overflow-hidden cursor-pointer hover:text-primary"
                 onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}
                 onClick={() => setOpen('')}
+                variants={{
+                    hidden: { opacity: 0, y: 75 },
+                    show: { opacity: 1, y: 0 }
+                }}
+                initial="hidden"
+                animate={mainControls}
+                transition={{
+                    duration: 0.7, delay: 0.5
+                }}
             >
                 <div className='relative'>
                     <Image width={362} height={204} src={thumbnail} alt='' />
@@ -33,7 +57,7 @@ export const VideoCard = ({ title, url }: iVideo) => {
                 <div className='py-5 px-8'>
                     <h4 className='font-extrabold lg:text-lg leading-[22px] hover:text-primary'>{title}</h4>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Modal */}
             <div className={`${open} fixed top-0 left-0 flex justify-center items-center w-[100%] h-screen bg-overlay opacity-60 saturate-50 overflow-hidden z-50`}></div>
