@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { AiFillCaretDown, AiFillCaretUp } from 'react-icons/ai'
+import { motion } from 'framer-motion'
 
 export const Dropdown = () => {
 

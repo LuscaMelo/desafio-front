@@ -1,9 +1,7 @@
 import Image from 'next/image'
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import thumbnail from '../../public/images/thumbnail.png'
 import { HiMiniPlay } from 'react-icons/hi2'
-import { IoMdClose } from 'react-icons/io'
-import { BsCloudDownload } from 'react-icons/bs'
 import { motion, useAnimation, useInView } from 'framer-motion'
 import { Modal } from './Modal'
 
@@ -14,6 +12,10 @@ interface iVideo {
 
 export const VideoCard = ({ title, url }: iVideo) => {
 
+    const [show, setShow] = useState(false)
+    const [open, setOpen] = useState(false)
+
+    //Animation Scroll Control
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true })
 
@@ -24,10 +26,6 @@ export const VideoCard = ({ title, url }: iVideo) => {
             mainControls.start("show")
         }
     }, [isInView, mainControls])
-
-    const [show, setShow] = useState(false)
-    const [open, setOpen] = useState(false)
-
 
     return (
         <>

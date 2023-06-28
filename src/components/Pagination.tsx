@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const Pagination = () => {
     return (
         <div className='flex gap-2 items-center text-md lg:text-2xl'>

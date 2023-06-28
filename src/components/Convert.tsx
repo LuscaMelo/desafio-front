@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import React from 'react'
 
+//Images
 import comparativo from '../../public/images/comparativo_img_CTA.png'
 import rdStation from '../../public/images/selo_RD.png'
 import noCard from '../../public/images/no-card-dark.webp'

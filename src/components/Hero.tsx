@@ -1,7 +1,6 @@
 "use client"
 
 import Image from 'next/image'
-import React from 'react'
 import heroImg from "/public/images/asset-header.png";
 import { motion } from "framer-motion"
 
