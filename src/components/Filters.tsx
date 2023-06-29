@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FilterButton } from './FilterButton'
 import { Dropdown } from './Dropdown'
 
@@ -19,18 +19,28 @@ const filterButtons: iButton[] = [
 
 export const Filters = () => {
 
-    const [selectedFilter, setSelectedFilter] = useState(filterButtons)
+    const [active, setActive] = useState(false)
+
+    const handleChangeActive = (id: number) => {
+        filterButtons.map(filter => {
+            filter.id == id ? filter.isSelected = true : filter.isSelected = false
+        })
+        setActive(true)
+    }
+
+    useEffect(() => { setActive(false) }, [active])
 
     return (
         <div className='flex flex-wrap justify-center items-center lg:justify-between mb-6 lg:mb-0'>
             <div className='flex justify-center flex-wrap gap-2'>
                 {
-                    selectedFilter.map(btn => (
+                    filterButtons.map(btn => (
                         <FilterButton
                             key={btn.id}
                             content={btn.content}
-                            isSelected={btn.isSelected}
-                            id={btn.id} />
+                            isSelected={btn.isSelected ? !active : active}
+                            id={btn.id}
+                            changeActive={handleChangeActive} />
                     ))
                 }
             </div>
